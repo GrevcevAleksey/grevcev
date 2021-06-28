@@ -1,17 +1,17 @@
 <template>
     <div id="app">
-        <h2 style="text-align: center">Общая страница</h2>
-        <p style="text-align: center">
-            Тест общей страницы
-        </p>
-        <hr>
+        <MainGrevcev></MainGrevcev>
     </div>
 </template>
 
 <script>
+    import MainGrevcev from './pages/main_grevcev';
     export default {
+        components: {
+            MainGrevcev,
+        },
         mounted() {
-            console.log('Component mounted.')
+            // console.log('Component mounted.')
         }
     }
 </script>
