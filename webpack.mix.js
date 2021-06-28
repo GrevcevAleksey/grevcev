@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 
-// const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 /*
  |--------------------------------------------------------------------------
@@ -26,11 +26,11 @@ const mix = require('laravel-mix');
 // Возможно, перед выполнением данной команды потребуется выйти из openserver полностью (3000 порт может быть занят)
 mix.js('resources/js/app.js', 'public/js').version()
     .vue()
-    .sass('resources/sass/app.scss', 'public/css').browserSync(process.env.APP_URL); // vue2.local либо process.env.APP_URL
-    // .webpackConfig({
-    //     plugins: [
-    //         new VuetifyLoaderPlugin({
-    //             options: {}
-    //         }),
-    //     ]
-    // });
+    .sass('resources/sass/app.scss', 'public/css').browserSync(process.env.APP_URL) //; // vue2.local либо process.env.APP_URL
+    .webpackConfig({
+        plugins: [
+            new VuetifyLoaderPlugin({
+                options: {}
+            }),
+        ]
+    });

@@ -1,7 +1,10 @@
 <template>
-    <div id="app">
+    <v-app>
+    <!-- <div id="app"> -->
         <MainGrevcev></MainGrevcev>
-    </div>
+        <!-- <main-grevcev></main-grevcev> -->
+    <!-- </div> -->
+    </v-app>
 </template>
 
 <script>
