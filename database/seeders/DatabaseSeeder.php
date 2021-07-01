@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\StreetSeeder;
+use Database\Seeders\CitySeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,5 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
+        $this->call(StreetSeeder::class);
+        $this->call(CitySeeder::class);
     }
 }

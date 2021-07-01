@@ -9,14 +9,14 @@ use Illuminate\Support\Str;
 class UserFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
+     * The name of the factory's corresponding model.  Название соответствующей модели завода.
      *
      * @var string
      */
     protected $model = User::class;
 
     /**
-     * Define the model's default state.
+     * Define the model's default state.  Определите состояние модели по умолчанию
      *
      * @return array
      */
