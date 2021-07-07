@@ -1900,15 +1900,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     startSave: function startSave() {
-      this.axios.get("start-method", {
-        params: {
-          user: 'Алексей',
-          email: 'tas_devil@rambler.ru',
-          city: 'Ставрополь',
-          street: 'Ленина',
-          house: '167'
-        }
-      }).then(function (response) {
+      this.axios.get('start-method').then(function (response) {
         console.log(response);
       })["catch"](function (error) {
         console.log(error);

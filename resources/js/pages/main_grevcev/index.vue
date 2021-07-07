@@ -24,15 +24,7 @@ export default {
     },
     methods: {
         startSave() {
-            this.axios.get("start-method", {
-                params: {
-                    user: 'Алексей',
-                    email: 'tas_devil@rambler.ru',
-                    city: 'Ставрополь',
-                    street: 'Ленина',
-                    house: '167',
-                }
-            })
+            this.axios.get('start-method')
             .then((response) => {
                 console.log(response);
             })
