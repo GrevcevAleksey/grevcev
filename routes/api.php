@@ -17,7 +17,7 @@ use App\Http\Controllers\AuthController;
 Route::get('start-method', 'App\Http\Controllers\StartController@startMethod');
 
 Route::group([
-    'middleware' => 'api',
+   // 'middleware' => 'api',
     'prefix' => 'auth'
 
 ], function ($router) {
