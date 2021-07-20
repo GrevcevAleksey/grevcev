@@ -1,17 +1,17 @@
 <template>
     <v-app>
-    <!-- <div id="app"> -->
-        <MainGrevcev></MainGrevcev>
-        <!-- <main-grevcev></main-grevcev> -->
-    <!-- </div> -->
+        <div id="app">
+            <Home></Home>
+        </div>
+    <router-view />
     </v-app>
 </template>
 
 <script>
-    import MainGrevcev from './pages/main_grevcev';
+    import Home from './pages/home';
     export default {
         components: {
-            MainGrevcev,
+            Home,
         },
         mounted() {
             // console.log('Component mounted.')
